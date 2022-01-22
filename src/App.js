@@ -1,13 +1,21 @@
+import React from 'react';
+import data from './componentes/Data/data';
+import Header from './componentes/front/Header';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-        <p>React - ecommmerce</p>
-    
-    </div>
-  );
+
+const App = () => {
+   const {produtosItems} =data;
+
+  return(
+     <div>
+        <Router>
+           <Header />
+       </Router> 
+     </div>
+  )
 }
 
-export default App;
+
+export default App
